@@ -573,8 +573,8 @@
 						<label for="name">用户名称：</label><input type="text" id="name" />
 					</div>
 					<div style="margin-top:20px;">
-						<label class="radio-inline"> <input type="radio" name="type" id="inlineRadio1" value="1"> 医生</label>
-						<label class="radio-inline"> <input type="radio" name="type" id="inlineRadio2" value="2">养生爱好者</label>
+						<label class="radio-inline"> <input type="radio" class="inlineRadio" name="type" id="inlineRadio1" value="1"> 医生</label>
+						<label class="radio-inline"> <input type="radio" class="inlineRadio" checked="checked" name="type" id="inlineRadio2" value="2">养生爱好者</label>
 					</div>
 					<div style="margin-top:20px;">
 						<label for="password">登录密码：</label><input type="password"	id="password" placeholder="请输入密码" />
@@ -582,7 +582,7 @@
 					<div style="margin-top:20px;">
 						<label for="repassword" class="pull-left">确认密码：</label><input type="password"	id="repassword" placeholder="请输入密码" />
 					</div>
-					<div style="margin-top:20px;">
+					<div style="margin-top:20px;" id="registerphoto" hidden="hidden">
 						<label for="certify" class="pull-left">证书上传：</label><input type="file"	id="certify" placeholder="请输入密码" />
 					</div>
 					<div class="clearfix"></div>
@@ -590,7 +590,7 @@
 				</div>
 				<div class="modal-footer center-block">
 					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-					<button type="button" class="btn btn-primary">确定</button>
+					<button type="button" class="btn btn-primary" id="submitregister">确定</button>
 				</div>
 			</div>
 			<!-- /.modal-content -->
